@@ -59,3 +59,8 @@ main {
   justify-content: center;
   flex-direction: column;
 }
+
+.eachPost{
+  border: solid 1px #b63f3f,
+  margin: 10px,
+}

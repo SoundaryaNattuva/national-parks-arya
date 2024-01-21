@@ -3,17 +3,6 @@
 
 <h1>parks/new - create a new park entry</h1>
 
-parkName: String,
-owner: { type: Schema.Types.ObjectId, ref: "Profile" },
-date: Date,
-route: String,
-companion: [String],
-trailGrub: [String],
-wildlife: [String],
-elevation: Number,
-comments: [commentSchema]
-
-
 <form action="/parks" method="POST">
   <label>Park:
     <select name="parkName" id="nameDropDown">
