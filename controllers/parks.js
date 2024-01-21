@@ -8,6 +8,7 @@ function newParkPost(req, res) {
 
 
 function createPost (req,res){
+req.body.owner = req.user.profile._id
 Park.create(req.body)
   .then(parks => {
     res.redirect('/parks')
