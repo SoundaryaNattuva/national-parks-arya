@@ -18,6 +18,7 @@ const parkSchema = new Schema({
   trailGrub: [String],
   wildlife: [String],
   elevation: Number,
+  postContent: String,
   comments: [commentSchema]
 }, {
   timestamps: true

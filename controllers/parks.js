@@ -19,7 +19,17 @@ Park.create(req.body)
 }
 
 function indexPage(req,res){
-  res.render("🏞️🏞️🏞️🏞️🏞️")
+  console.log("👔")
+  Park.find({})
+  .then (parks => {
+    res.render('parks/index', {
+      parks,
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/")
+  })
 }
 
 export {

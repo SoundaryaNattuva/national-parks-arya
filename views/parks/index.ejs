@@ -1,0 +1,18 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+<h1>All Adventures</h1>
+
+<ul class="list-of-parks">
+<% parks.forEach (park => {%>
+  <ul class="eachPost"> <%= park.name %> visited on <%= park.date %></ul>
+<% }) %>
+</ul>
+
+
+  <a href="/parks/new">
+    <button>Log new adventure</button>
+  </a>
+
+
+
+<%- include('../partials/footer') %>
