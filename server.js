@@ -8,6 +8,7 @@ import session from 'express-session'
 import logger from 'morgan'
 import methodOverride from 'method-override'
 import passport from 'passport'
+import {router as parksRouter } from './routes/parks.js'
 
 // import custom middleware
 import { passDataToView } from './middleware/middleware.js'
@@ -61,6 +62,7 @@ app.use(passDataToView)
 // mount imported routes
 app.use('/', indexRouter)
 app.use('/auth', authRouter)
+app.use('/parks', parksRouter)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
