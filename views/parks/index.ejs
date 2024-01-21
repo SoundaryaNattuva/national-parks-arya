@@ -4,9 +4,12 @@
 
 <ul class="list-of-parks">
 <% parks.forEach (park => {%>
-  <ul class="eachPost"> <%= park.parkName %> visited on <%= park.date %>
+  <ul class="eachPost">
+    <a href="/tacos/<%= park._id %>">
+    <%= park.parkName %> visited on <%= park.date %>
     <br>
     <%= park.postContent %>
+    </a>
   </ul>
 <% }) %>
 </ul>

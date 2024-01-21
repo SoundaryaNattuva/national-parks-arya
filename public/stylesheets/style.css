@@ -60,7 +60,7 @@ main {
   flex-direction: column;
 }
 
-.eachPost{
+.list-of-parks{
   border: solid 1px #b63f3f,
   margin: 10px,
 }
