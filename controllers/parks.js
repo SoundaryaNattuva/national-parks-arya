@@ -14,7 +14,7 @@ Park.create(req.body)
   })
   .catch(err => {
     console.log(err)
-    res.redirect('/tacos')
+    res.redirect('/parks')
   })
 }
 
@@ -32,8 +32,38 @@ function indexPage(req,res){
   })
 }
 
+function show(req, res){
+  Park.findById(req.params.parkId)
+  .populate("owner")
+  .then(park => {
+    res.render('parks/show', {
+      park,
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/parks")
+  })
+}
+
+
+function edit(req, res){
+  Park.findById(req.params.parkId)
+  .then(park => {
+      res.render('parks/edit'),
+      park
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/tacos')
+  })
+}
+
+
 export {
   newParkPost as new,
   createPost as create,
   indexPage as index,
+  show,
+  edit,
 }

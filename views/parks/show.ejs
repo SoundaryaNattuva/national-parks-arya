@@ -1,0 +1,26 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+
+<h1>showing <%= park._id %></h1>
+
+<h1><%= park.parkName %></h1>
+<h3><%= park.date %></h3>
+<section>
+  <%= park.route %>
+  <%= park.elevation %>
+  <%= park.companion %>
+  <%= park.wildlife %>
+  <%= park.trailGrub %>
+</section>
+<p> <%= park.postContent %></p>
+
+<% if (park.owner.equals(user?.profile._id)) { %>
+<a href="parks/<%= park.parkId %>/edit">
+<button>Edit</button>
+</a>
+<form href="parks/<%= park.parkId %>/?_method=DELETE" method="POST">
+  <button>Edit</button>
+</form>
+<% } %>
+
+<%- include('../partials/footer') %>

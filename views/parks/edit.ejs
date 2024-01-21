@@ -1,0 +1,52 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+
+<h1>parks/new - create a new park entry</h1>
+
+<form 
+  action="/parks<%= park._id %>?_method=PUT"
+  method="POST">
+  <label>Park:
+    <select name="parkName" id="nameDropDown">
+      <option value="<%= park.parkName %>">Mount Rainier</option>
+      <option>Mount Rainier</option>
+      <option>Rocky Mountain</option>
+      <option>Sequoia</option>
+      <option>Acadia</option>
+      <option>Zion</option>
+    </select>
+  </label>
+  <br>
+  <label>Date:
+    <input type="date" name = "date">
+  </label>
+  <label></label>
+<br>
+  <label>Route:
+    <input type="text" name="route" value="<%= park.route %>">
+  </label>
+<br>
+  <label>Elevation:
+    <input type="number" name="elevation" value="<%= park.elevation %>">
+  </label>
+<br>
+  <label>Companion(s):
+    <input type="text" name="companion" value="<%= park.companion %>" >
+  </label>
+<br>
+  <label>Wildlife:
+    <input type="text" name="wildlife" value="<%= park.wildlife %>">
+  </label>
+<br>
+  <label>Trail Grub:
+    <input type="text" name="trailGrub" value="<%= park.trailGrub %>">
+  </label>
+<br>
+  <label>Post:
+    <input type="text" name="postContent" value="<%= park.postContent %>">
+  </label>
+<br>
+  <button> Create Post </button>
+</form>
+
+<%- include('../partials/footer') %>

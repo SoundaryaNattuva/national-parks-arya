@@ -64,3 +64,8 @@ main {
   border: solid 1px #b63f3f,
   margin: 10px,
 }
+
+.navButton{
+  padding: 5px,
+  border: solid 1px black,
+}
