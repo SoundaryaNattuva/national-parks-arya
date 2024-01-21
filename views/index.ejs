@@ -1,0 +1,43 @@
+<%- include('./partials/html-head') %>
+<%- include('./partials/nav') %>
+
+<main>
+  <% if (!user) { %>
+  <h1>Welcome to Treky!</h1>
+  <p class="intro">
+    The ultimate companion for nature enthusiasts and badge collectors!
+celebrate each trail conquered and document every moment of your escapades.
+With Treky every hike becomes a story and every badge a trophy.
+
+<p class="log-in-btn">
+<div 
+id="g_id_onload"
+data-client_id="<%= googleClientID %>"
+data-login_uri="/auth/google"
+data-auto_prompt="false"
+data-prompt_parent_id="g_id_onload"
+></div>
+<div 
+class="g_id_signin right"
+data-type="standard"
+data-size="large"
+data-theme="outline"
+data-text="sign_in_with"
+data-shape="rectangular"
+data-logo_alignment="left"
+></div>
+<% } %>
+</p>
+
+
+  <% if (user?.profile.avatar) { %>
+    <div>
+        <h1>Welcome Back <%= user ? user.profile.name : "friend" %> !</h1>
+
+        <h1>Got a new expedition to chronicle?</h1>
+        <button href=""></button>
+    </div>
+  <% } %>
+</main>
+
+<%- include('./partials/footer') %>
