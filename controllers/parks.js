@@ -8,7 +8,7 @@ function newParkPost(req, res) {
 
 
 function createPost (req,res){
-  park.create(req.body)
+Park.create(req.body)
   .then(parks => {
     res.redirect('/')
   })
