@@ -13,7 +13,7 @@ const parkSchema = new Schema({
   parkName: String,
   owner: { type: Schema.Types.ObjectId, ref: "Profile" },
   date: Date,
-  route: String,
+  route: [String],
   companion: [String],
   trailGrub: [String],
   wildlife: [String],
@@ -32,8 +32,8 @@ const tacoSchema = new Schema({
   timestamps: true
 })
 
-const Taco = mongoose.model('Taco', tacoSchema)
+const Park = mongoose.model('Park', parkSchema)
 
 export {
-  Taco
+  Park
 }
