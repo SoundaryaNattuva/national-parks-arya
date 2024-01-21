@@ -2,13 +2,16 @@ import mongoose from 'mongoose'
 
 const Schema = mongoose.Schema
 
-const commentSchema = new Schema {{
-  
-}}
+const commentSchema = new Schema({
+  content: String,
+  author: { type: Schema.Types.ObjectId, ref: "Profile"},
+}, {
+  timestamps: true
+})
 
 const parkSchema = new Schema({
   parkName: String,
-  author: { type: Schema.Types.ObjectId, ref: "Profile"},
+  owner: { type: Schema.Types.ObjectId, ref: "Profile" },
   date: Date,
   route: String,
   companion: [String],
