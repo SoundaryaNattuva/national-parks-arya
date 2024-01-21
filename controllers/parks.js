@@ -51,8 +51,9 @@ function show(req, res){
 function edit(req, res){
   Park.findById(req.params.parkId)
   .then(park => {
-      res.render('parks/edit'),
+      res.render('parks/edit',{
       park
+    })
   })
   .catch(err => {
     console.log(err)

@@ -15,10 +15,10 @@
 <p> <%= park.postContent %></p>
 
 <% if (park.owner.equals(user?.profile._id)) { %>
-<a href="parks/<%= park.parkId %>/edit">
+<a href="<%= park._id %>/edit">
 <button>Edit</button>
 </a>
-<form href="parks/<%= park.parkId %>/?_method=DELETE" method="POST">
+<form href="parks/<%= park._id %>/?_method=DELETE" method="POST">
   <button>Delete</button>
 </form>
 <% } %>
