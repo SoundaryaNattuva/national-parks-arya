@@ -1,10 +1,10 @@
 <%- include('../partials/html-head') %>
 <%- include('../partials/nav') %>
 
-<h1>parks/new - create a new park entry</h1>
+<h1>Update a Park</h1>
 
 <form 
-  action="/parks<%= park._id %>?_method=PUT"
+  action="/parks/<%= park._id %>?_method=PUT"
   method="POST">
   <label>Park:
     <select name="parkName" id="nameDropDown">
@@ -46,7 +46,7 @@
     <input type="text" name="postContent" value="<%= park.postContent %>">
   </label>
 <br>
-  <button> Create Post </button>
+  <button type="submit"> Update Post </button>
 </form>
 
 <%- include('../partials/footer') %>

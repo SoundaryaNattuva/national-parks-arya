@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background-color: #264653;
+  background-color: #becacf;
   color: #E9C46A;
   /* Use a system font, if none are available use any found sans-sarif font */
   font-family: system-ui, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
@@ -61,11 +61,15 @@ main {
 }
 
 .list-of-parks{
-  border: solid 1px #b63f3f,
-  margin: 10px,
+  border: solid 1px #b63f3f;
+  color: white;
+  text-decoration: none;
 }
 
+.eachPost{
+  border: solid 1px blue;
+}
 .navButton{
-  padding: 5px,
-  border: solid 1px black,
+  padding: 5px;
+  border: solid 1px black;
 }

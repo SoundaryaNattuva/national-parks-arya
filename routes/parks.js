@@ -19,6 +19,13 @@ router.get('/:parkId/edit', isLoggedIn, parksCtrl.edit)
 //POST localhost:3000/parks/
 router.post ('/', isLoggedIn, parksCtrl.create )
 
+//DELETE localhost:3000/parks/parkId
+router.delete('/:parkId', isLoggedIn, parksCtrl.delete)
+
+//PUT localhost:3000/parks/parkId/
+router.put('/:parkId', isLoggedIn, parksCtrl.update)
+
+
 export {
   router
 }

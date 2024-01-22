@@ -62,10 +62,52 @@ function edit(req, res){
 }
 
 
+function deletePost(req, res){
+  Park.findIdBy(req.params.id)
+  .then (park => {
+    if (park.owner.equals(req.user.profile._id)) {
+      park.deleteOne()
+      .then(() => {
+        res.redirect('/parks')
+      })
+    } else {
+      throw new Error ('🚫 Not authorized 🚫')
+    }
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/parks')
+  })
+}
+
+function updatePost(req, res) {
+  Park.findById(req.params.parkId)
+  .then(park => {
+    if (park.owner.equals(req.user.profile._id)) {
+      park.updateOne(req.body)
+      .then(()=> {
+        res.redirect(`/parks/${park._id}`)
+      })
+    } else {
+      throw new Error('🚫 Not authorized 🚫')
+    }
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect(`/parks`)
+  })
+}
+
+
+
+
+
 export {
   newParkPost as new,
   createPost as create,
   indexPage as index,
   show,
   edit,
+  deletePost as delete,
+  updatePost as update,
 }
