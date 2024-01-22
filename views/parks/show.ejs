@@ -23,9 +23,32 @@
 </form>
 <% } %>
 
-<% if (park.owner.equals(user?.profile._id)) { %>
+<h2>Comments</h2>
+<ul>
+  <% park.comments?.forEach(comment => { %>
+    <li call="eachComment">
+      <%= comment.content %> - <%= comment.author.name %>
+      -&nbsp; 
+        <img 
+          class="comment-photo" 
+          src="<%= comment.author.avatar %>" 
+          alt="avatar of commenter"
+        > 
+        <a href="/profiles/<%= comment.author._id %>">
+          <%= comment.author %>
+        </a> 
+        &nbsp;at 
+        <%= comment.createdAt.toLocaleString() %>
+    </li> 
+  <% }) %>
+</ul>
 
-
+<% if (user) { %>
+  <h3>Add a comment</h3>
+  <form action="/parks/<%= park._id %>/comments" method="POST">
+    <textarea name="content"></textarea><br>
+    <button type="submit">Add Comment</button>
+  </form>
 <% } %>
 
 

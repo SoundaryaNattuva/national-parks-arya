@@ -25,6 +25,8 @@ router.delete('/:parkId', isLoggedIn, parksCtrl.delete)
 //PUT localhost:3000/parks/parkId/
 router.put('/:parkId', isLoggedIn, parksCtrl.update)
 
+//POST localhost:3000/tacos/:tacoId/comments
+router.post('/:parkId/comments', isLoggedIn, parksCtrl.addComment)
 
 export {
   router

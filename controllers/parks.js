@@ -99,7 +99,25 @@ function updatePost(req, res) {
   })
 }
 
-
+function addComment(req,res){
+  Park.findById(req.params.parkId)
+  .then(park => {
+    req.body.author = req.user.profile._id
+    park.comments.push(req.body)
+    park.save()
+    .then(()=> {
+      res.redirect(`/parks/${park._id}`)
+    })
+    .catch(err => {
+      console.log(err)
+      res.redirect('/parks')
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/parks')
+  })
+}
 
 
 export {
@@ -110,4 +128,5 @@ export {
   edit,
   deletePost as delete,
   updatePost as update,
+  addComment
 }
