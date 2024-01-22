@@ -31,15 +31,28 @@ nav {
   padding: 10px;
   min-height: 60px;
   max-height: 80px;
-}
-
-.btnRight{
+  width: 100%;
   float: right;
 }
 
-.nav-logo {
+#navLogo {
   border: solid 1px white;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  width: 25%
 }
+
+#navMenu{
+  border: solid 1px white;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  width: 75%;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
 
 main {
   display: flex;
@@ -79,7 +92,7 @@ main {
   border: solid 1px blue;
 }
 .navButton{
-  padding: 20px 30px 20px 30px;
+  padding: 20px 10px 20px 10px;
   color: white;
   font-size: 32px;
   text-decoration: none;

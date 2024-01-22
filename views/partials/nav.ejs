@@ -4,11 +4,12 @@
 </head>
 <body>
   <nav>
-    <a>
-      <img src="https://i.imgur.com/NA2iWtQ.png" alt="logo" style="width: 120px; height: 120px; float: left;" id="navLogo">
-    </a>
+    <div id="navLogo">
+      <img src="https://i.imgur.com/Ah1Eznn.png" alt="logo" style="width: 180px; height: 180px; float: left;">
+    </div>
+    <div id="navMenu">
     <% if (user) { %>
-      <div id="btnRight">
+      <div id="btnsRight">
         <a href="/parks" class="navButton">Adventures</a>
         <a href="/parks/badges" class="navButton">Badges</a>
         <a href="/parks/buddies" class="navButton">Buddies</a>
@@ -34,4 +35,5 @@
         data-logo_alignment="left"
       ></div>
     <% } %>
+    </div>
   </nav>

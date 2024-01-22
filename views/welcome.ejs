@@ -1,18 +1,25 @@
 <%- include('./partials/html-head.ejs') %>
-<link rel="stylesheet" href="/stylesheets/loginpage.css" />
+<link rel="stylesheet" href="/stylesheets/welcomepage.css" />
 <%- include('./partials/nav.ejs') %>
 
-<body></body>
+<body>
+  <div class="container">
   <% if (user?.profile.avatar) { %>
-    <div>
-        <h1>Welcome Back <%= user ? user.profile.name : "friend" %> !</h1>
-
+    <div class="welcomeMessage">
+      <h1>Welcome Back <%= user ? user.profile.name : "friend" %> !</h1>
+    </div>
+    <div class="statusIcons">
+      // inset images
+    </div>
+    <div class="logPrompt">
         <h1>Got a new expedition to chronicle?</h1>
-      <a href="/parks/new">
-        <button class = "btn">Trek and Tell</button>
-      </a>
+        <br><a href="/parks/new">
+          <button class = "blogbtn">Trek and Tell</button>
+        </a>
     </div>
   <% } %>
-</main>
+  </div>
+
+</body>
 
 <%- include('./partials/footer.ejs') %>

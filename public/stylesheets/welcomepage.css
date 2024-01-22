@@ -1,0 +1,57 @@
+body{
+  color: white;
+
+}
+
+.blogbtn {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Poiret One', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Silkscreen', sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.container{
+  border: solid 1px white;
+  height: 500px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:auto;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.welcomeMessage{
+  border: solid 1px red;
+  width: 400px;
+  text-align: center;
+}
+
+.statusIcons{
+  border: solid 1px green;
+  width: 400px;
+  text-align: center;
+}
+
+.logPrompt{
+  border: solid 1px blue;
+  width: 400px;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
