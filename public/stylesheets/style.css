@@ -12,25 +12,28 @@ html {
 }
 
 body {
-  background-color: #becacf;
-  color: #090806;
+  background-image: url('../images/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
   /* Use a system font, if none are available use any found sans-sarif font */
   font-family: 'Poiret One', sans-serif;
   font-family: 'Quicksand', sans-serif;
   font-family: 'Silkscreen', sans-serif;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   margin: 0;
-  border: solid 1px pink
 }
 
 nav {
-  background-color: #f6f6f6;
+  background-color: #335C67;
   color: #1a1a1a;
   display: flex;
   align-items: center;
   padding: 10px;
   min-height: 60px;
-  border: solid 1px rgb(104, 77, 158)
+}
+
+.nav-logo{
+  size: 3em;
 }
 
 main {
@@ -52,7 +55,6 @@ main {
   width: 400px;
   max-width: 400px;
   text-align: center;
-  border: solid 1px pink
 }
 
 .log-in-btn{

@@ -5,14 +5,20 @@
   box-sizing: border-box;
 }
 
+.body{
+  background-image: url('../image/background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
 .container{
   display: flex;
   height: 500px;
   width: 800px;
-  border: 1px solid black;
   margin: auto;
   margin-top: 50px;
-  box-shadow: 15px 15px green;
+  box-shadow: 15px 15px #540B0E;
+  border-radius: 10px;
 }
 
 .left-column{
@@ -20,7 +26,10 @@
   flex-direction: column;
   width: 50%;
   align-items: center;
-  background-color: whitesmoke;
+  background-color: #9E2A2B;
+  font-size: 24px;
+  color: #FFF3B0;
+  border-radius: 10px;
 }
 
 .left-column h1{
@@ -34,15 +43,20 @@
   justify-content: center;
 }
 
-.right-side{
+.right-column{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
-  background-color: yellow;
+  background-color: #E9C46A;
+  border-radius: 10px;
 }
 
 .side img{
   width: 450px;
   height: 450px;
+}
+
+.intro{
+  width: 330px;
 }
