@@ -8,7 +8,7 @@
   method="POST">
   <label>Park:
     <select name="parkName" id="nameDropDown">
-      <option value="<%= park.parkName %>">Mount Rainier</option>
+      <option value="<%= park.parkName %>"></option>
       <option>Mount Rainier</option>
       <option>Rocky Mountain</option>
       <option>Sequoia</option>
@@ -40,6 +40,10 @@
 <br>
   <label>Trail Grub:
     <input type="text" name="trailGrub" value="<%= park.trailGrub %>">
+  </label>
+<br>
+<label>Upload Images:
+  <input type="url" name="imageUrls">
   </label>
 <br>
   <label>Post:

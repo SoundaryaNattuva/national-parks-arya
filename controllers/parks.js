@@ -57,7 +57,7 @@ function edit(req, res){
   })
   .catch(err => {
     console.log(err)
-    res.redirect('/tacos')
+    res.redirect('/parks')
   })
 }
 
@@ -119,6 +119,77 @@ function addComment(req,res){
   })
 }
 
+function editComment(req, res){
+  Park.findById(req.params.parkId)
+  .then(park => {
+    const comment = park.comments.id(req.params.commentId)
+    if (comment.author.equals(req.user.profile._id)) {
+      res.render('parks/editComment', {
+        park, 
+        comment,
+        title: 'Update Comment'
+      })
+    } else {
+      throw new Error('🚫 Not authorized 🚫')
+    }
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/parks')
+  })
+}
+
+
+function updateComment(req, res){
+  Park.findById(req.params.parkId)
+  .then(park => {
+    const comment = park.comments.id(req.params.commentId)
+    if (comment.author.equals(req.user.profile._id)) {
+      comment.set(req.body)
+      park.save()
+      .then(() => {
+        res.redirect(`/parks/${park._id}`)
+      })
+      .catch(err => {
+        console.log(err)
+        res.redirect('/parks')
+      })
+    } else {
+      throw new Error('🚫 Not authorized 🚫')
+    }
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/parks')
+  })
+}
+
+function deleteComment(req, res){
+  Park.findById(req.params.parkId)
+  .then(park => {
+    const comment = park.comments.id(req.params.commentId)
+    if (comment.author.equals(req.user.profile._id)) {
+      park.comments.remove(comment)
+      park.save()
+      .then(() => {
+        res.redirect(`/parks/${park._id}`)
+      })
+      .catch(err => {
+        console.log(err)
+        res.redirect('/parks')
+      })
+    } else {
+      throw new Error('🚫 Not authorized 🚫')
+    }
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/parks')
+  })
+}
+
+
+
 
 export {
   newParkPost as new,
@@ -128,5 +199,8 @@ export {
   edit,
   deletePost as delete,
   updatePost as update,
-  addComment
+  addComment,
+  editComment,
+  updateComment,
+  deleteComment
 }

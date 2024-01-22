@@ -1,0 +1,53 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+
+<h1>showing <%= park._id %></h1>
+
+<h1><%= park.parkName %></h1>
+<h3><%= park.date %></h3>
+<section>
+  <%= park.route %>
+  <%= park.elevation %>
+  <%= park.companion %>
+  <%= park.wildlife %>
+  <%= park.trailGrub %>
+</section>
+<p> <%= park.postContent %></p>
+
+<% if (park.owner.equals(user?.profile._id)) { %>
+<a href="<%= park._id %>/edit">
+<button>Edit</button>
+</a>
+<form action="/parks/<%= park._id %>?_method=DELETE" method="POST">
+  <button type="submit">Delete Post</button>
+</form>
+<% } %>
+
+<h2>Comments</h2>
+<% if (comment.author.equals(user?.profile._id)) { %>
+  <form action="/parks/<%= park._id %>/comments/<%= comment._id %>?_method=PUT" method="POST">
+    <label>Comment:
+      <br>
+      <textarea
+        cols="30"
+        rows="5" 
+        type="text"
+        name="content" 
+        autocomplete="off"
+        ><%= comment.content %>
+      </textarea>
+    </label>
+      <button type="submit">Save Comment</button>
+  </form>
+        <% } %>
+
+<% if (user) { %>
+  <h3>Add a comment</h3>
+  <form action="/parks/<%= park._id %>/comments" method="POST">
+    <textarea name="content"></textarea><br>
+    <button type="submit">Add Comment</button>
+  </form>
+<% } %>
+
+
+<%- include('../partials/footer') %>

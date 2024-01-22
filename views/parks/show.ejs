@@ -5,6 +5,7 @@
 
 <h1><%= park.parkName %></h1>
 <h3><%= park.date %></h3>
+<img src="<%= park.imageUrls %>">
 <section>
   <%= park.route %>
   <%= park.elevation %>
@@ -26,7 +27,7 @@
 <h2>Comments</h2>
 <ul>
   <% park.comments?.forEach(comment => { %>
-    <li call="eachComment">
+    <li class="eachComment">
       <%= comment.content %> - <%= comment.author.name %>
       -&nbsp; 
         <img 
@@ -34,11 +35,21 @@
           src="<%= comment.author.avatar %>" 
           alt="avatar of commenter"
         > 
-        <a href="/profiles/<%= comment.author._id %>">
-          <%= comment.author %>
-        </a> 
+        <%= comment.author.name %>
         &nbsp;at 
         <%= comment.createdAt.toLocaleString() %>
+        <% if (comment.author.equals(user?.profile._id)) { %>
+          <br>
+          <a href="/parks/<%= park._id %>/comments/<%= comment._id %>/edit">
+            <button class="btn">Edit Comment</button>
+          </a>
+          <form 
+            action="/parks/<%= park._id %>/comments/<%= comment._id %>?_method=DELETE" 
+            method="POST"
+          >
+            <button class="btn" type="submit">Delete Comment</button>
+          </form>
+        <% } %> 
     </li> 
   <% }) %>
 </ul>
