@@ -4,15 +4,18 @@
 </head>
 <body>
   <nav>
-    <a><img src="../../public/images/treky.jpg" alt="logo" id="nav-logo"></a>
+    <a>
+      <img src="https://i.imgur.com/NA2iWtQ.png" alt="logo" style="width: 120px; height: 120px; float: left;" id="navLogo">
+    </a>
     <% if (user) { %>
-      <a href="/parks" class="navButton">Adventures</a>
-      <a href="/parks/badges" class="navButton">Badges</a>
-      <a href="/parks/buddies" class="navButton">Buddies</a>
-
-      <a href="/auth/logout" class="right">
-        <button type="submit">Logout</button>
-      </a>
+      <div id="btnRight">
+        <a href="/parks" class="navButton">Adventures</a>
+        <a href="/parks/badges" class="navButton">Badges</a>
+        <a href="/parks/buddies" class="navButton">Buddies</a>
+        <a href="/auth/logout" class="navButton">
+          <button type="submit">Logout</button>
+        </a>
+      </div>
     <% } else { %>
       <div 
         id="g_id_onload"
