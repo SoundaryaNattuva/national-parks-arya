@@ -1,6 +1,6 @@
 body{
   color: white;
-
+  align-content: center;
 }
 
 .blogbtn {
@@ -24,14 +24,14 @@ body{
 
 .container{
   border: solid 1px white;
-  height: 500px;
-  width: 800px;
+  height: 550px;
+  width: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin:auto;
   justify-content: center;
-  margin-top: 20px;
+  margin: auto;
+  align-content: center;
 }
 
 .welcomeMessage{
