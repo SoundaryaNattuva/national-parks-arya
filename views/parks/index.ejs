@@ -13,7 +13,7 @@
     <div id="postRow">
       <div id="numbers"> <%= index %></div>
       <a href="/parks/<%= park._id %>">
-        <%= park.parkName %> visited on <%= park.date %>
+        <%= park.parkName %> visited on <%= new Date(park.date).toDateString("en-US") %>
       </a>
     </div>
   </li>
