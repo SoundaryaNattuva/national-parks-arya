@@ -1,34 +1,45 @@
 <%- include('./partials/html-head.ejs') %>
+<link rel="stylesheet" href="/stylesheets/loginpage.css" />
 <%- include('./partials/nav.ejs') %>
 
-<main>
-  <% if (!user) { %>
-  <h1>Welcome to Treky!</h1>
-  <img src="../assets/logo.png">
-  <p class="intro">
-    The ultimate companion for nature enthusiasts and badge collectors!
-celebrate each trail conquered and document every moment of your escapades.
-With Treky every hike becomes a story and every badge a trophy.
+<body>
+  <div class="container">
+    <section class="left-column">
+      <% if (!user) { %>
+      <h1>Welcome to Treky!</h1>
+      <img src="../assets/logo.png">
+      <p class="intro">
+        The ultimate companion for nature enthusiasts and badge collectors!
+        celebrate each trail conquered and document every moment of your escapades.
+        With Treky every hike becomes a story and every badge a trophy.
+      </p>
 
-<p class="log-in-btn">
-<div 
-id="g_id_onload"
-data-client_id="<%= googleClientID %>"
-data-login_uri="/auth/google"
-data-auto_prompt="false"
-data-prompt_parent_id="g_id_onload"
-></div>
-<div 
-class="g_id_signin right"
-data-type="standard"
-data-size="large"
-data-theme="outline"
-data-text="sign_in_with"
-data-shape="rectangular"
-data-logo_alignment="left"
-></div>
-<% } %>
-</p>
+      <p class="log-in-btn">
+        <div 
+        id="g_id_onload"
+        data-client_id="<%= googleClientID %>"
+        data-login_uri="/auth/google"
+        data-auto_prompt="false"
+        data-prompt_parent_id="g_id_onload"
+        ></div>
+        <div 
+        class="g_id_signin center"
+        data-type="standard"
+        data-size="large"
+        data-theme="outline"
+        data-text="sign_in_with"
+        data-shape="rectangular"
+        data-logo_alignment="left"
+        ></div>
+        <% } %>
+      </p>
+    </section>
+    <div class="right-side">
+      <img src="https://i.imgur.com/oHoDzT9.png">
+    </div>
+  </div>
+
+</body>
 
 
   <% if (user?.profile.avatar) { %>
