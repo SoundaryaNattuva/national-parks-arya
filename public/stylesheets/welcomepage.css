@@ -35,23 +35,54 @@ body{
 }
 
 .welcomeMessage{
-  border: solid 1px red;
+  /* border: solid 1px red; */
   width: 400px;
   text-align: center;
+}
+
+.welcomeMessage h2{
+  color:#9E2A2B;
 }
 
 .statusIcons{
-  border: solid 1px green;
+  /* border: solid 1px green; */
   width: 400px;
   text-align: center;
 }
 
-.logPrompt{
-  border: solid 1px blue;
+.quesPrompt{
+  /* border: solid 1px blue; */
   width: 400px;
   display: inline-block;
   justify-content: center;
   text-align: center;
   align-items: center;
   align-content: center;
+}
+
+.logPrompt{
+  border: solid 1px yellow;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 80px;
+  margin: auto;
+}
+
+#prompt{
+  /* border: solid 1px purple; */
+  background-color: #fbeee0;
+  border: 3px solid #422800;
+  border-radius: 10px;
+  color: #422800;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color:rgba(158, 42, 43, 0.75); */
+  /* box-shadow: 15px 15px rgba(233, 196, 106, 0.5);  */
 }

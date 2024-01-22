@@ -5,14 +5,17 @@
 <body>
   <div class="container">
   <% if (user?.profile.avatar) { %>
-    <div class="welcomeMessage">
-      <h1>Welcome Back <%= user ? user.profile.name : "friend" %> !</h1>
-    </div>
-    <div class="statusIcons">
-      // inset images
-    </div>
-    <div class="logPrompt">
-        <h1>Got a new expedition to chronicle?</h1>
+    <div id="prompt">
+      <div class="welcomeMessage">
+        <h1>The Trailblazer Returns!</h1>
+        <h2>Welcome Back <%= user ? user.profile.name : "friend" %> !</h2>
+      </div>
+      <div class="statusIcons">
+        // inset images
+      </div>
+      <div class="quesPrompt">
+          <h1>Got a new expedition to chronicle?</h1>
+      </div>
     </div>
     <div class="logPrompt">
       <a href="/parks/new">
