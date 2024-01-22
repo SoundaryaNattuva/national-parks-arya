@@ -63,7 +63,7 @@ function edit(req, res){
 
 
 function deletePost(req, res){
-  Park.findIdBy(req.params.id)
+  Park.findById(req.params.parkId)
   .then (park => {
     if (park.owner.equals(req.user.profile._id)) {
       park.deleteOne()
@@ -79,6 +79,7 @@ function deletePost(req, res){
     res.redirect('/parks')
   })
 }
+
 
 function updatePost(req, res) {
   Park.findById(req.params.parkId)
@@ -97,7 +98,6 @@ function updatePost(req, res) {
     res.redirect(`/parks`)
   })
 }
-
 
 
 

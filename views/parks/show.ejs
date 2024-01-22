@@ -18,8 +18,8 @@
 <a href="<%= park._id %>/edit">
 <button>Edit</button>
 </a>
-<form href="/parks/<%= park._id %>/?_method=DELETE" method="POST">
-  <button>Delete</button>
+<form action="/parks/<%= park._id %>?_method=DELETE" method="POST">
+  <button type="submit">Delete Post</button>
 </form>
 <% } %>
 
