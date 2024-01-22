@@ -1,0 +1,89 @@
+
+
+.adventuresHeader{
+  background-color: #fbeee0;
+  border-radius: 30px;
+  border: solid 3px #422800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:500px;
+  padding: 0px 10px;
+  flex-direction: column;
+}
+
+.indexHeader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.list-of-parks{
+  width: 600px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.eachPost{
+  color:antiquewhite;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+li a{
+  text-decoration: none;
+  color:#fbeee0
+}
+
+#postRow{
+  background-color: #b63f3f;
+  color:#fbeee0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: solid 2px #422800;
+  border-radius: 50px;
+  height: 45px;
+  margin: 10px 0;
+}
+
+#numbers{
+  border: solid 2px #b63f3;
+  border-radius: 50px;
+  width: 40px;
+  height: 45px;
+  background-color:  #422800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+
+#logAdventure{
+  padding: 20px 10px 20px 10px;
+  color:#b63f3f;
+  font-size: 32px;
+  text-decoration: none;
+  border: solid 1px white;
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Poiret One', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Silkscreen', sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  margin: 5px;
+}

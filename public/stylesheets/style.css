@@ -21,6 +21,10 @@ body {
   font-family: 'Silkscreen', sans-serif;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 nav {
@@ -41,7 +45,10 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 25%
+  width: 25%;
+  background-color: #fbeee0;
+  border-radius: 30px;
+  border: solid 3px #422800
 }
 
 #navMenu{
@@ -82,15 +89,6 @@ main {
   flex-direction: column;
 }
 
-.list-of-parks{
-  border: solid 1px #b63f3f;
-  color: white;
-  text-decoration: none;
-}
-
-.eachPost{
-  border: solid 1px blue;
-}
 .navButton{
   padding: 20px 10px 20px 10px;
   color:#b63f3f;

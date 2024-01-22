@@ -1,22 +1,28 @@
 <%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/index.css" />
 <%- include('../partials/nav') %>
-<h1>All Adventures</h1>
+
+<h1 id="indexHeader">
+<img class="adventuresHeader" src="https://i.imgur.com/wnsmBt3.png">
+</h1>
+
 
 <ul class="list-of-parks">
-<% parks.forEach (park => {%>
-  <ul class="eachPost">
-    <a href="/parks/<%= park._id %>">
-    <%= park.parkName %> visited on <%= park.date %>
-    <br>
-    <%= park.postContent %>
-    </a>
-  </ul>
+<% parks.forEach ((park, index) => {%>
+  <li class="eachPost">
+    <div id="postRow">
+      <div id="numbers"> <%= index %></div>
+      <a href="/parks/<%= park._id %>">
+        <%= park.parkName %> visited on <%= park.date %>
+      </a>
+    </div>
+  </li>
 <% }) %>
 </ul>
 
 
   <a href="/parks/new">
-    <button>Log new adventure</button>
+    <button id="logAdventure">Log new adventure</button>
   </a>
 
 
