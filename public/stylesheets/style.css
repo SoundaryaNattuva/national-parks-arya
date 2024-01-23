@@ -114,6 +114,11 @@ main {
   margin: 5px;
 }
 
+.navButton:hover{
+  background-color: #2596be;
+  color:#fbeee0
+}
+
 .eachComment{
   padding: 5px;
   border: solid 1px black;
