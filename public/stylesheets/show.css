@@ -308,16 +308,15 @@
   flex-direction: column;
 }
 
-#right-create-comments{
-  border: 2px solid #422800;
+#bottom-create-comments{
+  /* border: 2px solid #422800; */
   width: 80%;
+  height: 200px;
   align-items: center;
   justify-content: center;
   display: flex;
-  font-family: 'Poiret One', sans-serif;
-  font-family: 'Quicksand', sans-serif;
-  font-family: 'Silkscreen', sans-serif;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  margin: 0px 0px 10px 0px;
+  flex-direction: column;
 }
 
 .eachComment{
@@ -356,18 +355,49 @@
   width: 480px;
   text-align: end;
   font-size: 20px;
-  /* background-color: #b63f3f; */
   color: #42280;
   padding: 5px 5px;
   border-radius: 20px;
-  /* border:#69b4c9 solid 1px */
 }
 
 #commentContent{
   width: 450px;
-  /* text-align: start; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* display: block; */
 }
 
+#add-comment{
+  font-family: 'Bungee', sans-serif;
+  color:#fbeee0;
+  font-size: 24px;
+  padding: 0px 0px;
+  text-shadow: 3px 3px 3px #976213;
+  background-color:  #5d8693;
+  width: 600px;
+  border: solid 3px #fbeee0;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  flex-direction: row;
+}
+
+#input-comment{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#input-box{
+  width: 350px;
+  height: 75px;
+  padding-top: 10px;
+  margin: 10px 0px 0px 0px
+}
+
+#comment-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}

@@ -72,13 +72,15 @@
 
 </div>
 
-<div id="right-create-comments">
+<div id="bottom-create-comments">
 <% if (user) { %>
-  <h3>Add a comment</h3>
-  <form action="/parks/<%= park._id %>/comments" method="POST">
-    <textarea name="content"></textarea><br>
-    <button id="addComment" type="submit">Add Comment</button>
-  </form>
+  <div id="add-comment"><h3>Add a comment</h3></div>
+  <div id="input-comment">
+    <form action="/parks/<%= park._id %>/comments" method="POST" id="comment-form">
+      <textarea name="content" id="input-box"></textarea><br>
+      <button id="addComment" type="submit">Add Comment</button>
+    </form>
+  </div>
 <% } %>
 </div>
 
