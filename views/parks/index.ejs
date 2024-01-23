@@ -11,7 +11,7 @@
 <% parks.forEach ((park, index) => {%>
   <li class="eachPost">
     <div id="postRow">
-      <div id="numbers"> <%= index %></div>
+      <div id="numbers"> <%= index + 1 %></div>
       <a href="/parks/<%= park._id %>">
         <%= park.parkName %> visited on <%= new Date(park.date).toDateString("en-US") %>
       </a>
