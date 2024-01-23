@@ -3,25 +3,39 @@
 <%- include('../partials/nav') %>
 
 <h1 id="park-name"><%= park.parkName %></h1>
-<h3><%= park.date %></h3>
-<img src="<%= park.imageUrls %>">
-<section>
-  <%= park.route %>
-  <%= park.elevation %>
-  <%= park.companion %>
-  <%= park.wildlife %>
-  <%= park.trailGrub %>
-</section>
-<p> <%= park.postContent %></p>
 
-<% if (park.owner.equals(user?.profile._id)) { %>
-<a href="<%= park._id %>/edit">
-<button id="editBtn">Edit</button>
-</a>
-<form action="/parks/<%= park._id %>?_method=DELETE" method="POST">
-  <button id="deleteBtn" type="submit">Delete Post</button>
-</form>
-<% } %>
+<div class="container">
+
+  <div class="route-date">
+    <div id="route">Route: <%= park.route %> </div>
+    <div id="date"> <%= new Date(park.date).toDateString("en-US") %> </div>
+  </div>
+  <div class="inner-container">
+    <div class="left-column">
+      <div id="elevation"> Elevation: <%= park.elevation %> ft</div>
+      <div id="companion"> Companions: <%= park.companion %> </div>
+      <div id="wildlife"> Wildlife: <%= park.wildlife %> </div>
+      <div id="grub"> Trail Grub: <%= park.trailGrub %> </div>
+    </div>
+    <div class="right-column">
+      <div id="photo-box"><img id="photo" src="<%= park.imageUrls %>"></div>
+      <div id="content"><%= park.postContent %></div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="bottombtns">
+  <% if (park.owner.equals(user?.profile._id)) { %>
+    <a href="<%= park._id %>/edit">
+    <button id="editBtn">Edit</button>
+    </a>
+    <form action="/parks/<%= park._id %>?_method=DELETE" method="POST">
+      <button id="deleteBtn" type="submit">Delete Post</button>
+    </form>
+  <% } %>
+</div>
 
 
 <!-- comments section  -->
