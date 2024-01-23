@@ -1,16 +1,17 @@
 #park-name{
   font-family: 'Bungee', sans-serif;
-  color:#b63f3f;
+  color:#fbeee0;
   font-size: 56px;
   padding: 0px;
   text-shadow: 3px 3px 3px #e28254;
-  background-color: #fbeee0;
-  width: 400px;
-  border: solid 3px #422800;
+  background-color:  #422800;
+  width: 600px;
+  border: solid 3px #fbeee0;
   border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
 }
 
 
