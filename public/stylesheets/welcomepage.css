@@ -86,3 +86,8 @@ body{
   /* background-color:rgba(158, 42, 43, 0.75); */
   /* box-shadow: 15px 15px rgba(233, 196, 106, 0.5);  */
 }
+
+.blogbtn:hover{
+  background-color: #2596be;
+  color:#fbeee0
+}
