@@ -1,0 +1,98 @@
+#addComment{
+  padding: 20px 10px 20px 10px;
+  color:#b63f3f;
+  font-size: 32px;
+  text-decoration: none;
+  border: solid 1px white;
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Poiret One', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Silkscreen', sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  margin: 5px;
+}
+
+#addComment:hover{
+    background-color: #4d8964;
+    color:#fbeee0;
+}
+
+#deleteBtn{
+  padding: 20px 10px 20px 10px;
+  font-size: 32px;
+  text-decoration: none;
+  border: solid 1px white;
+  background-color: #b63f3f;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color:#fbeee0;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Poiret One', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Silkscreen', sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  margin: 5px;
+}
+
+#deleteBtn:hover{
+  background-color: #763232;
+  color:#fbeee0;
+}
+
+#editBtn{
+  padding: 20px 10px 20px 10px;
+  font-size: 32px;
+  text-decoration: none;
+  border: solid 1px white;
+  background-color: #d77542;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #fbeee0;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Poiret One', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Silkscreen', sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  margin: 5px;
+}
+
+#editBtn:hover{
+  background-color: #a45b33;
+  color:#fbeee0;
+}
+
+
+#editBtn:hover{
+  background-color: #a45b33;
+  color:#fbeee0;
+}
+
+#deleteBtn:hover{
+  background-color: #763232;
+  color:#fbeee0;
+}

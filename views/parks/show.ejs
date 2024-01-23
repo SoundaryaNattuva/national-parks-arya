@@ -1,7 +1,6 @@
 <%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/show.css"/>
 <%- include('../partials/nav') %>
-
-<h1>showing <%= park._id %></h1>
 
 <h1><%= park.parkName %></h1>
 <h3><%= park.date %></h3>
@@ -17,10 +16,10 @@
 
 <% if (park.owner.equals(user?.profile._id)) { %>
 <a href="<%= park._id %>/edit">
-<button>Edit</button>
+<button id="editBtn">Edit</button>
 </a>
 <form action="/parks/<%= park._id %>?_method=DELETE" method="POST">
-  <button type="submit">Delete Post</button>
+  <button id="deleteBtn" type="submit">Delete Post</button>
 </form>
 <% } %>
 
@@ -41,13 +40,13 @@
         <% if (comment.author.equals(user?.profile._id)) { %>
           <br>
           <a href="/parks/<%= park._id %>/comments/<%= comment._id %>/edit">
-            <button class="btn">Edit Comment</button>
+            <button id="editBtn">Edit Comment</button>
           </a>
           <form 
             action="/parks/<%= park._id %>/comments/<%= comment._id %>?_method=DELETE" 
             method="POST"
           >
-            <button class="btn" type="submit">Delete Comment</button>
+            <button id="deleteBtn" type="submit">Delete Comment</button>
           </form>
         <% } %> 
     </li> 
@@ -58,7 +57,7 @@
   <h3>Add a comment</h3>
   <form action="/parks/<%= park._id %>/comments" method="POST">
     <textarea name="content"></textarea><br>
-    <button type="submit">Add Comment</button>
+    <button id="addComment" type="submit">Add Comment</button>
   </form>
 <% } %>
 
