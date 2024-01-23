@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="/stylesheets/show.css"/>
 <%- include('../partials/nav') %>
 
-<h1><%= park.parkName %></h1>
+<h1 id="park-name"><%= park.parkName %></h1>
 <h3><%= park.date %></h3>
 <img src="<%= park.imageUrls %>">
 <section>
@@ -23,6 +23,8 @@
 </form>
 <% } %>
 
+
+<!-- comments section  -->
 <h2>Comments</h2>
 <ul>
   <% park.comments?.forEach(comment => { %>
