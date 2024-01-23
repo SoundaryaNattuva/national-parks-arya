@@ -1,53 +1,57 @@
 <%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/new.css"/>
 <%- include('../partials/nav') %>
 
-<h1>parks/new - create a new park entry</h1>
-
-<form action="/parks" method="POST">
-  <label>Park:
-    <select name="parkName" id="nameDropDown">
-      <option>Mount Rainier</option>
-      <option>Rocky Mountain</option>
-      <option>Sequoia</option>
-      <option>Acadia</option>
-      <option>Zion</option>
-    </select>
-  </label>
+<h1>
+  <img id="createNewHeader" src="https://i.imgur.com/jDtUGYa.png">
+</h1>
+  
+<section class="container">
+  <form action="/parks" method="POST">
+    <label id="park" class="selections">Park:
+      <select name="parkName" id="nameDropDown">
+        <option>Mount Rainier</option>
+        <option>Rocky Mountain</option>
+        <option>Sequoia</option>
+        <option>Acadia</option>
+        <option>Zion</option>
+      </select>
+    </label>
+    <br>
+    <label id="date" class="selections">Date:
+      <input type="date" name = "date">
+    </label>
   <br>
-  <label>Date:
-    <input type="date" name = "date">
-  </label>
-  <label></label>
-<br>
-  <label>Route:
-    <input type="text" name="route">
-  </label>
-<br>
-  <label>Elevation:
-    <input type="number" name="elevation">
-  </label>
-<br>
-  <label>Companion(s):
-    <input type="text" name="companion">
-  </label>
-<br>
-  <label>Wildlife:
-    <input type="text" name="wildlife">
-  </label>
-<br>
-  <label>Trail Grub:
-    <input type="text" name="trailGrub">
-  </label>
-<br>
-  <label>Upload Images:
-  <input type="url" name="imageUrls">
-  </label>
-<br>
-  <label>Post:
-    <input type="text" name="postContent">
-  </label>
-<br>
-  <button> Create Post </button>
-</form>
+    <label id="route" class="selections">Route:
+      <input type="text" name="route">
+    </label>
+  <br>
+    <label id="elevation" class="selections">Elevation:
+      <input type="number" name="elevation">
+    </label>
+  <br>
+    <label id="companions" class="selections">Companion(s):
+      <input type="text" name="companion">
+    </label>
+  <br>
+    <label id="wildlife" class="selections">Wildlife:
+      <input type="text" name="wildlife">
+    </label>
+  <br>
+    <label id="grub" class="selections">Trail Grub:
+      <input type="text" name="trailGrub">
+    </label>
+  <br>
+    <label id="img" class="selections">Upload Images:
+    <input type="url" name="imageUrls">
+    </label>
+  <br>
+    <label id="content" class="selections">Post:
+      <input type="text" name="postContent">
+    </label>
+  <br>
+    <button class="createPost"> Create Post </button>
+  </form>
+</section>
 
 <%- include('../partials/footer') %>

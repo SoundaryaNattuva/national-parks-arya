@@ -1,0 +1,91 @@
+
+#createNewHeader{
+  background-color: #fbeee0;
+  border-radius: 30px;
+  border: solid 3px #422800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:800px;
+  padding: 0px 10px;
+  flex-direction: column;
+}
+
+form {
+  /* border: solid 3px white; */
+  color:#fbeee0;
+  font-size: 24px;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 600px;
+}
+
+.container{
+  /* border: solid 2px white; */
+  width: 700px;
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#nameDropDown{
+  font-family: 'Poiret One', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Silkscreen', sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 22px;
+  color:rgb(45,69,60)
+}
+
+.createPost{
+  padding: 20px 10px 20px 10px;
+  font-size: 32px;
+  text-decoration: none;
+  background-color: #b63f3f;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  color: #fbeee0;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Poiret One', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Silkscreen', sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  margin: 5px;
+}
+
+.selections{
+  padding: 20px 10px 20px 10px;
+  color:#422800;
+  background-color: #efad73;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  font-family: 'Poiret One', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Silkscreen', sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  margin: 10px 5px;
+  flex-direction: row;
+}
+
+input{
+  height: 24px;
+  border-radius: 15px;
+}
