@@ -26,11 +26,13 @@
   flex-direction: column;
   width: 50%;
   align-items: center;
-  background-color: #9E2A2B;
+  background-color: #b63f3f;
+  text-shadow: 3px 3px 3px #540B0E;
   font-size: 24px;
-  color: #FFF3B0;
+  color:#fbeee0;
   border-radius: 10px;
 }
+
 
 .left-column h1{
   font-size: 3rem;
@@ -52,9 +54,9 @@
   border-radius: 10px;
 }
 
-.side img{
-  width: 450px;
-  height: 450px;
+#fox{
+  width: 400px;
+  height: 400px;
 }
 
 .intro{
