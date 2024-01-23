@@ -35,7 +35,10 @@ function indexPage(req,res){
 
 function show(req, res){
   Park.findById(req.params.parkId)
-  .populate("owner")
+  .populate([
+    {path: "owner"},
+    {path: "comments.author"}
+  ])
   .then(park => {
     res.render('parks/show', {
       park,

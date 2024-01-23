@@ -25,7 +25,7 @@
 
 </div>
 
-
+<!-- edit and delete section  -->
 <div class="bottombtns">
   <% if (park.owner.equals(user?.profile._id)) { %>
     <a href="<%= park._id %>/edit">
@@ -39,36 +39,40 @@
 
 
 <!-- comments section  -->
-<h2>Comments</h2>
-<ul>
-  <% park.comments?.forEach(comment => { %>
-    <li class="eachComment">
-      <%= comment.content %> - <%= comment.author.name %>
-      -&nbsp; 
-        <img 
-          class="comment-photo" 
-          src="<%= comment.author.avatar %>" 
-          alt="avatar of commenter"
-        > 
-        <%= comment.author.name %>
-        &nbsp;at 
-        <%= comment.createdAt.toLocaleString() %>
-        <% if (comment.author.equals(user?.profile._id)) { %>
-          <br>
-          <a href="/parks/<%= park._id %>/comments/<%= comment._id %>/edit">
-            <button id="editBtn">Edit Comment</button>
-          </a>
-          <form 
-            action="/parks/<%= park._id %>/comments/<%= comment._id %>?_method=DELETE" 
-            method="POST"
-          >
-            <button id="deleteBtn" type="submit">Delete Comment</button>
-          </form>
-        <% } %> 
-    </li> 
-  <% }) %>
-</ul>
+<div id="comment-container">
+    <div id="comment-header"><h2>Comments</h2></div>
+    <ul>
+      <% park.comments?.forEach(comment => { %>
+        <ul class="eachComment">
+          <div id="commentOnly">
+            <div id="commentInfo">
+              <%= comment.author.name %> at 
+              <%= comment.createdAt.toLocaleString() %>
+            </div>
+            <div id="commentContent">
+              <%= comment.content %>
+            </div>
+          </div>
+            <% if (comment.author.equals(user?.profile._id)) { %>
+              <div id="e-d-btn">
+                <a href="/parks/<%= park._id %>/comments/<%= comment._id %>/edit">
+                  <button id="editBtnCom"><i class="fas fa-pen fa-1x"></i></button>
+                </a>
+                <form 
+                  action="/parks/<%= park._id %>/comments/<%= comment._id %>?_method=DELETE" 
+                  method="POST"
+                >
+                  <button id="deleteBtn" type="submit">X</button>
+                </form>
+              </div>  
+            <% } %> 
+        </ul> 
+      <% }) %>
+    </ul>
 
+</div>
+
+<div id="right-create-comments">
 <% if (user) { %>
   <h3>Add a comment</h3>
   <form action="/parks/<%= park._id %>/comments" method="POST">
@@ -76,6 +80,7 @@
     <button id="addComment" type="submit">Add Comment</button>
   </form>
 <% } %>
+</div>
 
 
 <%- include('../partials/footer') %>
