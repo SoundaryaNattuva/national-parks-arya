@@ -64,6 +64,11 @@ form {
   margin: 5px;
 }
 
+.createPost:hover{
+  background-color: #2596be;
+  color:#fbeee0
+}
+
 .selections{
   padding: 20px 10px 20px 10px;
   color:#422800;
