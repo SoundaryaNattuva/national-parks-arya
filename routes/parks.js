@@ -10,6 +10,9 @@ router.get('/', isLoggedIn, parksCtrl.index)
 //GET locahost:3000/parks/new
 router.get ('/new', isLoggedIn, parksCtrl.new)
 
+//GET localhost:3000/parks/badges
+router.get('/badges', isLoggedIn, parksCtrl.showBadges)
+
 //GET localhost:3000/parks/:parkId
 router.get('/:parkId', parksCtrl.show)
 
@@ -36,7 +39,6 @@ router.put('/:parkId/comments/:commentId', isLoggedIn, parksCtrl.updateComment)
 
 //DELETE localhost:3000/parks/:parkId/comments/:commentId
 router.delete('/:parkId/comments/:commentId', isLoggedIn, parksCtrl.deleteComment)
-
 
 export {
   router

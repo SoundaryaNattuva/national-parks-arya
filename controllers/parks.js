@@ -192,6 +192,9 @@ function deleteComment(req, res){
 }
 
 
+function showBadges(req, res){
+  res.render('parks/badges')
+}
 
 
 export {
@@ -205,5 +208,6 @@ export {
   addComment,
   editComment,
   updateComment,
-  deleteComment
+  deleteComment,
+  showBadges
 }
