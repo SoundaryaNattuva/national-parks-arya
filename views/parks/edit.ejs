@@ -1,56 +1,65 @@
 <%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/edit.css"/>
 <%- include('../partials/nav') %>
 
-<h1>Update a Park</h1>
+<h1>
+  <img id="update-header" src="https://i.imgur.com/tvaBNHL.png">
+</h1>
 
 <form 
   action="/parks/<%= park._id %>?_method=PUT"
   method="POST">
-  <label>Park:
-    <select name="parkName" id="nameDropDown">
-      <option value="<%= park.parkName %>"></option>
-      <option>Mount Rainier</option>
-      <option>Rocky Mountain</option>
-      <option>Sequoia</option>
-      <option>Acadia</option>
-      <option>Zion</option>
-    </select>
-  </label>
-  <br>
-  <label>Date:
-    <input type="date" name = "date" value="<%= park.date %>">
-  </label>
-  <label></label>
-<br>
-  <label>Route:
-    <input type="text" name="route" value="<%= park.route %>">
-  </label>
-<br>
-  <label>Elevation:
-    <input type="number" name="elevation" value="<%= park.elevation %>">
-  </label>
-<br>
-  <label>Companion(s):
-    <input type="text" name="companion" value="<%= park.companion %>" >
-  </label>
-<br>
-  <label>Wildlife:
-    <input type="text" name="wildlife" value="<%= park.wildlife %>">
-  </label>
-<br>
-  <label>Trail Grub:
-    <input type="text" name="trailGrub" value="<%= park.trailGrub %>">
-  </label>
-<br>
-<label>Upload Images:
-  <input type="url" name="imageUrls" value="<%= park.imageUrls %>">
-  </label>
-<br>
-  <label>Post:
-    <input type="text" name="postContent" value="<%= park.postContent %>">
-  </label>
-<br>
-  <button type="submit"> Update Post </button>
+  <div class="container">
+    <div class="route-date">
+      <div id="route">
+        <label>Route:
+          <input type="text" name="route" value="<%= park.route %>">
+        </label>
+      </div>
+      <div id="date"> 
+        <label>Date:
+          <input type="date" name = "date" value="<%= park.date %>">
+        </label>
+      </div>
+    </div>
+    <div class="inner-container">
+      <div class="left-column">
+        <div id="elevation">   
+          <label>Elevation:
+            <input type="number" name="elevation" value="<%= park.elevation %>">
+          </label>
+        </div>
+        <div id="companionInput"> 
+          <label>Companion(s):
+            <input type="text" name="companion" value="<%= park.companion %>" >
+          </label>
+        </div>
+        <div id="wildlife"> 
+          <label>Wildlife:
+            <input type="text" name="wildlife" value="<%= park.wildlife %>">
+          </label>
+        </div>
+        <div id="grub"> 
+          <label>Trail Grub:
+            <input type="text" name="trailGrub" value="<%= park.trailGrub %>">
+          </label> 
+        </div>
+      </div>
+      <div class="right-column">
+        <div id="photo-box"><img id="photo" src="<%= park.imageUrls %>"></div>
+        <div id="content">
+          <label>Post:
+            <input type="text" name="postContent" cols="50" value="<%= park.postContent %>">
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="update-row">
+    <button type="submit" id="updateBtn"> Update Post </button>
+  </div>
 </form>
+
+
 
 <%- include('../partials/footer') %>

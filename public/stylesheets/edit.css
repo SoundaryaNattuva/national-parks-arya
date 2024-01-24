@@ -1,19 +1,14 @@
-#park-name{
-  font-family: 'Bungee', sans-serif;
-  color:#fbeee0;
-  font-size: 56px;
-  padding: 0px;
-  text-shadow: 3px 3px 3px #e28254;
-  background-color:  #422800;
-  width: 600px;
-  border: solid 3px #fbeee0;
-  border-radius: 50px;
+#update-header{
+  background-color: #fbeee0;
+  border-radius: 30px;
+  border: solid 3px #422800;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: row;
+  align-items: center;
+  width:800px;
+  padding: 0px 10px;
+  flex-direction: column;
 }
-
 
 #addComment{
   padding: 20px 10px 20px 10px;
@@ -74,7 +69,7 @@
   padding: 20px 10px 20px 10px;
   text-decoration: none;
   border: solid 1px white;
-  background-color: #d77542;
+  background-color: #4d8964;
   border: 2px solid #422800;
   border-radius: 30px;
   box-shadow: #422800 4px 4px 0 0;
@@ -136,7 +131,7 @@
 
 .container{
   background-color: #fbeee0;
-  /* border: 2px solid #422800; */
+  border: 2px solid #422800;
   width: 800px;
   height: 500px;
 }
@@ -194,7 +189,15 @@
   box-shadow: 3px 3px 3px #422800;
 }
 
-#companion{
+#elevation input{
+  width: 80px;
+  border:#422800 solid 2px;
+  border-radius: 10px;
+  margin: 2px 2px;
+  padding: 5px 5px;
+}
+
+#companionInput{
   border: 2px solid #422800;
   width: 100%;
   height: 27%;
@@ -202,6 +205,14 @@
   margin: 5px 0px;
   background-color: #f4a259;
   box-shadow: 3px 3px 3px #422800;
+}
+
+#companionInput input{
+  height: 60px;
+  border:#422800 solid 2px;
+  border-radius: 10px;
+  margin: 2px 2px;
+  padding: 5px 5px;
 }
 
 #wildlife{
@@ -214,6 +225,14 @@
   box-shadow: 3px 3px 3px #422800;
 }
 
+#wildlife input{
+  height: 60px;
+  border:#422800 solid 2px;
+  border-radius: 10px;
+  margin: 2px 2px;
+  padding: 5px 5px;
+}
+
 #grub{
   border: 2px solid #422800;
   width: 100%;
@@ -222,6 +241,17 @@
   margin: 5px 0px;
   background-color: #adc178;
   box-shadow: 3px 3px 3px #422800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#grub input{
+  height: 60px;
+  border:#422800 solid 2px;
+  border-radius: 10px;
+  margin: 2px 2px;
+  padding: 5px 5px;
 }
 
 .right-column{
@@ -402,4 +432,62 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
+}
+
+#route input{
+  height:30px;
+  margin: 10px 0px 0px 0px;
+  flex-direction: row;
+  border:#233435 solid 3px;
+  border-radius: 20px;
+}
+
+#content input{
+  height:200px;
+  width: 500px;
+  margin: 10px 0px 0px 0px;
+  flex-direction: row;
+  border:#233435 solid 3px;
+  border-radius: 20px;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* flex-direction: row; */
+  resize: vertical;
+}
+
+#updateBtn{
+  padding: 20px 10px 20px 10px;
+  font-size: 32px;
+  text-decoration: none;
+  border: solid 1px white;
+  background-color: #4d8964;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color:#fbeee0;
+  display: inline;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Poiret One', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Silkscreen', sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  margin: 5px;
+}
+
+#updateBtn:hover{
+  background-color: #3b6b4d;
+}
+
+#update-row{
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+  padding: 20px 0px 15px 0px;
 }
