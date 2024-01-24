@@ -46,26 +46,31 @@
         <ul class="eachComment">
           <div id="commentOnly">
             <div id="commentInfo">
-              <%= comment.author.name %> at 
-              <%= comment.createdAt.toLocaleString() %>
+              <div>
+                <%= comment.author.name %> at 
+                <%= comment.createdAt.toLocaleString() %>
+              </div>
+              <div id="commentBtns">
+                  <div id="e-d-btn">
+                    <% if (comment.author.equals(user?.profile._id)) { %>
+                    <a href="/parks/<%= park._id %>/comments/<%= comment._id %>/edit">
+                      <button id="editBtnCom"><i class="fas fa-pen fa-xs"></i></button>
+                    </a>
+                    <form 
+                      action="/parks/<%= park._id %>/comments/<%= comment._id %>?_method=DELETE" 
+                      method="POST"
+                    >
+                      <button id="deleteBtnCom" type="submit">X</button>
+                    </form>
+                  <% } %>
+                  </div>  
+              </div>
             </div>
             <div id="commentContent">
               <%= comment.content %>
             </div>
           </div>
-            <% if (comment.author.equals(user?.profile._id)) { %>
-              <div id="e-d-btn">
-                <a href="/parks/<%= park._id %>/comments/<%= comment._id %>/edit">
-                  <button id="editBtnCom"><i class="fas fa-pen fa-xs"></i></button>
-                </a>
-                <form 
-                  action="/parks/<%= park._id %>/comments/<%= comment._id %>?_method=DELETE" 
-                  method="POST"
-                >
-                  <button id="deleteBtnCom" type="submit">X</button>
-                </form>
-              </div>  
-            <% } %> 
+          
         </ul> 
       <% }) %>
     </ul>

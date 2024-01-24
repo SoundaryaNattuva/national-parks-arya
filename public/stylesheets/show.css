@@ -173,6 +173,34 @@
   color:#fbeee0;
 }
 
+#commentBtns{
+  /* border: 2px solid #422800; */
+  width: 100px;
+  padding-left: 15px;
+}
+
+
+#e-d-btn{
+  width: 100px;
+  flex-direction: row;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid yellow; */
+  padding-left: 15px;
+}
+
+#commentInfo{
+  width: 80%;
+  text-align: end;
+  font-size: 20px;
+  color: #42280;
+  padding: 5px 5px;
+  border-radius: 20px;
+  /* border: 1px solid red; */
+  display: inline-flex;
+}
+
 .container{
   background-color: #fbeee0;
   /* border: 2px solid #422800; */
@@ -358,6 +386,7 @@
 }
 
 .eachComment{
+  /* border: 2px solid #3cca51; */
   width:700px;
   font-size: 24px;
   color:#422800;
@@ -372,7 +401,7 @@
   background-color: #eec6a3;
   padding: 5px 5px;
   border-radius: 30px;
-  width: 75%;
+  width: 90%;
   margin: 5px 5px;
   align-items: center;
   justify-content: center;
@@ -381,26 +410,10 @@
 }
 
 
-#e-d-btn{
-  width: 20%;
-  flex-direction: row;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid #422800;
-}
-
-#commentInfo{
-  width: 480px;
-  text-align: end;
-  font-size: 20px;
-  color: #42280;
-  padding: 5px 5px;
-  border-radius: 20px;
-}
 
 #commentContent{
   width: 450px;
+  padding-bottom: 15px;
 }
 
 #add-comment{
@@ -431,10 +444,13 @@
   width: 350px;
   height: 75px;
   padding-top: 10px;
+  padding-bottom: 10px;
   margin: 10px 0px 0px 0px;
   flex-direction: row;
   border:#233435 solid 3px;
   border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #comment-form{
@@ -446,6 +462,10 @@
 
 #commentInfo{
   color: #b63f3f;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 24px;
 }
 
 #park{
