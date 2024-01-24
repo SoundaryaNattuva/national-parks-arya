@@ -46,7 +46,11 @@
         </div>
       </div>
       <div class="right-column">
-        <div id="photo-box"><img id="photo" src="<%= park.imageUrls %>"></div>
+        <div id="photo-box">
+          <label id="img" class="selections">Upload Images:
+            <input type="url" name="imageUrls" value= <%= park.imageUrls %> id="photoInput">
+          </label>
+        </div>
         <div id="content">
           <label>Post:
             <input type="text" name="postContent" cols="50" value="<%= park.postContent %>">

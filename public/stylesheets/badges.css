@@ -9,3 +9,26 @@
   padding: 0px 10px;
   flex-direction: column;
 } 
+
+table {
+  border: solid 3px #422800;
+  width: 800px;
+  height: 800px;
+  background-color: #422800;
+}
+
+td{
+  border: solid 3px #422800;
+  width: 160px;
+  height: 160px;
+  background-color: #b63f3f;
+  font-family: 'Bungee', sans-serif;
+  font-size: 56px;
+  text-align: center;
+  text-shadow: 2px 2px 2px #582626;
+  color:#ebcbcb
+}
+
+td:hover{
+  background-color: #732424;
+}

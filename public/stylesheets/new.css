@@ -11,28 +11,6 @@
   flex-direction: column;
 }
 
-form {
-  /* border: solid 3px white; */
-  color:#fbeee0;
-  font-size: 24px;
-  padding: 20px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 600px;
-}
-
-.container{
-  /* border: solid 2px white; */
-  width: 700px;
-  height: 500px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
 #nameDropDown{
   font-family: 'Poiret One', sans-serif;
   font-family: 'Quicksand', sans-serif;
@@ -94,3 +72,41 @@ input{
   height: 24px;
   border-radius: 15px;
 }
+
+
+#createNewContainer{
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#headerSection{
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+form {
+  /* border: solid 3px white; */
+  color:#fbeee0;
+  font-size: 24px;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 700px;
+}
+
+#content{
+  width: 450px;
+  height: 300px;
+}
+
+#contentBox{
+  width: 400px;
+  height: 200px;
+}
+

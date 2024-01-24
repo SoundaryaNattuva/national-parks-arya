@@ -56,13 +56,13 @@
             <% if (comment.author.equals(user?.profile._id)) { %>
               <div id="e-d-btn">
                 <a href="/parks/<%= park._id %>/comments/<%= comment._id %>/edit">
-                  <button id="editBtnCom"><i class="fas fa-pen fa-1x"></i></button>
+                  <button id="editBtnCom"><i class="fas fa-pen fa-xs"></i></button>
                 </a>
                 <form 
                   action="/parks/<%= park._id %>/comments/<%= comment._id %>?_method=DELETE" 
                   method="POST"
                 >
-                  <button id="deleteBtn" type="submit">X</button>
+                  <button id="deleteBtnCom" type="submit">X</button>
                 </form>
               </div>  
             <% } %> 

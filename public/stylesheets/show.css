@@ -69,6 +69,41 @@
   margin: 5px;
 }
 
+#deleteBtnCom{
+  padding: 20px 10px 20px 10px;
+  font-size: 32px;
+  text-decoration: none;
+  border: solid 1px white;
+  background-color: #b63f3f;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color:#fbeee0;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Poiret One', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Silkscreen', sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  margin: 5px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#deleteBtnCom:hover{
+  background-color: #7d3333;
+  color:#fbeee0;
+}
+
 
 #editBtn{
   padding: 20px 10px 20px 10px;
@@ -119,9 +154,13 @@
   font-family: 'Quicksand', sans-serif;
   font-family: 'Silkscreen', sans-serif;
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  margin: 5px;
-  width: 50px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 #editBtnCom:hover{
   background-color: #a45b33;
@@ -280,7 +319,7 @@
   font-size: 24px;
   padding: 0px 0px;
   text-shadow: 3px 3px 3px #976213;
-  background-color:  #5d8693;
+  background-color: #5d8693;
   width: 600px;
   border: solid 3px #fbeee0;
   border-radius: 50px;
@@ -348,6 +387,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid #422800;
 }
 
 #commentInfo{
@@ -402,4 +442,12 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
+}
+
+#commentInfo{
+  color: #b63f3f;
+}
+
+#park{
+  border-radius: 20px;;
 }

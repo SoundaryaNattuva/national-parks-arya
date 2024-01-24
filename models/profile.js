@@ -5,6 +5,7 @@ const Schema = mongoose.Schema
 const profileSchema = new Schema({
   name: String,
   avatar: String,
+  parksVisited: String,
 }, {
   timestamps: true
 })

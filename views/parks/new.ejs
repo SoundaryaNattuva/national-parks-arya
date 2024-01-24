@@ -2,56 +2,59 @@
 <link rel="stylesheet" href="/stylesheets/new.css"/>
 <%- include('../partials/nav') %>
 
-<h1>
-  <img id="createNewHeader" src="https://i.imgur.com/jDtUGYa.png">
-</h1>
-  
-<section class="container">
-  <form action="/parks" method="POST">
-    <label id="park" class="selections">Park:
-      <select name="parkName" id="nameDropDown">
-        <option>Mount Rainier</option>
-        <option>Rocky Mountain</option>
-        <option>Sequoia</option>
-        <option>Acadia</option>
-        <option>Zion</option>
-      </select>
-    </label>
-    <br>
-    <label id="date" class="selections">Date:
-      <input type="date" name = "date">
-    </label>
-  <br>
-    <label id="route" class="selections">Route:
-      <input type="text" name="route">
-    </label>
-  <br>
-    <label id="elevation" class="selections">Elevation:
-      <input type="number" name="elevation">
-    </label>
-  <br>
-    <label id="companions" class="selections">Companion(s):
-      <input type="text" name="companion">
-    </label>
-  <br>
-    <label id="wildlife" class="selections">Wildlife:
-      <input type="text" name="wildlife">
-    </label>
-  <br>
-    <label id="grub" class="selections">Trail Grub:
-      <input type="text" name="trailGrub">
-    </label>
-  <br>
-    <label id="img" class="selections">Upload Images:
-    <input type="url" name="imageUrls">
-    </label>
-  <br>
-    <label id="content" class="selections">Post:
-      <input type="text" name="postContent">
-    </label>
-  <br>
-    <button class="createPost"> Create Post </button>
-  </form>
-</section>
+<div id="createNewContainer">
+  <div id="headerSection">
+    <h1>
+      <img id="createNewHeader" src="https://i.imgur.com/jDtUGYa.png">
+    </h1>
+  </div>
+  <div id="forumContainer">  
+    <form action="/parks" method="POST">
+      <label id="park" class="selections">Park:
+        <select name="parkName" id="nameDropDown">
+          <option>Mount Rainier</option>
+          <option>Rocky Mountain</option>
+          <option>Sequoia</option>
+          <option>Acadia</option>
+          <option>Zion</option>
+        </select>
+      </label>
+      <br>
+        <label id="date" class="selections">Date:
+          <input type="date" name = "date">
+        </label>
+      <br>
+        <label id="route" class="selections">Route:
+          <input type="text" name="route">
+        </label>
+      <br>
+        <label id="elevation" class="selections">Elevation:
+          <input type="number" name="elevation">
+        </label>
+      <br>
+        <label id="companions" class="selections">Companion(s):
+          <input type="text" name="companion">
+        </label>
+      <br>
+        <label id="wildlife" class="selections">Wildlife:
+          <input type="text" name="wildlife">
+        </label>
+      <br>
+        <label id="grub" class="selections">Trail Grub:
+          <input type="text" name="trailGrub">
+        </label>
+      <br>
+        <label id="img" class="selections">Upload Images:
+          <input type="url" name="imageUrls">
+        </label>
+      <br>
+        <label id="content" class="selections">Post:
+          <input id="contentBox" type="text" name="postContent">
+        </label>
+      <br>
+        <button class="createPost"> Create Post </button>
+    </form>
+  </div>
+</div>
 
 <%- include('../partials/footer') %>
