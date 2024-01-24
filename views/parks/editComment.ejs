@@ -1,53 +1,64 @@
 <%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/show.css"/>
 <%- include('../partials/nav') %>
 
-<h1>showing <%= park._id %></h1>
+<h1 id="park-name"><%= park.parkName %></h1>
 
-<h1><%= park.parkName %></h1>
-<h3><%= park.date %></h3>
-<section>
-  <%= park.route %>
-  <%= park.elevation %>
-  <%= park.companion %>
-  <%= park.wildlife %>
-  <%= park.trailGrub %>
-</section>
-<p> <%= park.postContent %></p>
+<div class="container">
 
-<% if (park.owner.equals(user?.profile._id)) { %>
-<a href="<%= park._id %>/edit">
-<button>Edit</button>
-</a>
-<form action="/parks/<%= park._id %>?_method=DELETE" method="POST">
-  <button type="submit">Delete Post</button>
-</form>
-<% } %>
+  <div class="route-date">
+    <div id="route">Route: <%= park.route %> </div>
+    <div id="date"> <%= new Date(park.date).toDateString("en-US") %> </div>
+  </div>
+  <div class="inner-container">
+    <div class="left-column">
+      <div id="elevation"> Elevation: <%= park.elevation %> ft</div>
+      <div id="companion"> Companions: <%= park.companion %> </div>
+      <div id="wildlife"> Wildlife: <%= park.wildlife %> </div>
+      <div id="grub"> Trail Grub: <%= park.trailGrub %> </div>
+    </div>
+    <div class="right-column">
+      <div id="photo-box"><img id="photo" src="<%= park.imageUrls %>"></div>
+      <div id="content"><%= park.postContent %></div>
+    </div>
+  </div>
 
-<h2>Comments</h2>
-<% if (comment.author.equals(user?.profile._id)) { %>
-  <form action="/parks/<%= park._id %>/comments/<%= comment._id %>?_method=PUT" method="POST">
-    <label>Comment:
-      <br>
-      <textarea
-        cols="30"
-        rows="5" 
-        type="text"
-        name="content" 
-        autocomplete="off"
-        ><%= comment.content %>
-      </textarea>
-    </label>
-      <button type="submit">Save Comment</button>
-  </form>
-        <% } %>
+</div>
 
-<% if (user) { %>
-  <h3>Add a comment</h3>
-  <form action="/parks/<%= park._id %>/comments" method="POST">
-    <textarea name="content"></textarea><br>
-    <button type="submit">Add Comment</button>
-  </form>
-<% } %>
+<!-- edit and delete section  -->
+<div class="bottombtns">
+  <% if (park.owner.equals(user?.profile._id)) { %>
+    <a href="<%= park._id %>/edit">
+    <button id="editBtn">Edit</button>
+    </a>
+    <form action="/parks/<%= park._id %>?_method=DELETE" method="POST">
+      <button id="deleteBtn" type="submit">Delete Post</button>
+    </form>
+  <% } %>
+</div>
+
+
+<div id="comment-header"><h2>Comments</h2></div>
+
+<div id="editCommentContainer">
+  <% if (comment.author.equals(user?.profile._id)) { %>
+    <form id="editCmtBox" action="/parks/<%= park._id %>/comments/<%= comment._id %>?_method=PUT" method="POST">
+      <label>
+        <br>
+        <textarea
+          id="editCommentBox"
+          cols="30"
+          rows="5" 
+          type="text"
+          name="content" 
+          autocomplete="off"
+          ><%= comment.content %>
+        </textarea>
+      </label>
+      <br><button type="submit" id="saveComment">Save Comment</button>
+    </form>
+  <% } %>
+</div>
 
 
 <%- include('../partials/footer') %>
