@@ -83,7 +83,6 @@ input{
 }
 
 form {
-  /* border: solid 3px white; */
   color:#fbeee0;
   font-size: 24px;
   padding: 20px 20px;
@@ -103,10 +102,12 @@ form {
 #contentBox{
   width: 400px;
   height: 200px;
+  border-radius: 30px;
+  border: solid 3px #422800;
+  padding: 10px 10px;
 }
 
 #createNewContainer{
-  /* border: 3px solid brown; */
   width:900px;
   align-items: center;
   flex-direction: row;
@@ -116,7 +117,6 @@ form {
 
 
 #forumContainer{
-  /* border: 3px solid blue; */
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -125,25 +125,34 @@ form {
 }
 
 #routeInput{
-  height: 50px
+  height: 50px;
+  padding: 10px 10px;
 }
 
 #companionsInput{
-  height: 50px
+  height: 50px;
+  padding: 10px 10px;
 }
 
 #wildlifeInput{
-  height: 50px
+  height: 50px;  
+  padding: 10px 10px;
 }
 
 #grubInput{
-  height: 50px
+  height: 50px;
+  padding: 10px 10px;
 }
 
 #imgInput{
-  width: 300px
+  width: 300px;
+  padding: 10px 10px;
 }
 
 #img{
   width: 400px;
+}
+
+#elevationInput{
+  padding: 5px 10px;
 }
