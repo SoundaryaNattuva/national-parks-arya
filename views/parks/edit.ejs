@@ -18,7 +18,12 @@
       </div>
       <div id="date"> 
         <label>Date:
-          <input type="date" name = "date" value="<%= park.date %>">
+          <input 
+          type="datetime-local" 
+          name="date" 
+          value="<%= park.date %>"
+          min="2000-01-01T00:00"
+          max="2099-01-01T00:00">
         </label>
       </div>
     </div>

@@ -12,12 +12,16 @@ function createPost (req,res){
 req.body.owner = req.user.profile._id
 Park.create(req.body)
   .then(park => {
-    res.redirect('/parks')
-    .then((profile) => {
-      console.log(park._id)
-      console.log(req.user.profile)
-      req.user.profile.parksVisited.push(park._id)
-    })
+    Profile.findById(req.user.profile._id)
+      .then(profile => {
+        console.log("This is the park id: ", park._id)
+        console.log("This is the currently logged in user: ", req.user.profile)
+        profile.parksVisited.push(park._id)
+        profile.save()
+        .then(() => {
+          res.redirect('/parks')
+        })
+      })
   })
   .catch(err => {
     console.log(err)
@@ -56,7 +60,6 @@ function show(req, res){
   })
 }
 
-
 function edit(req, res){
   Park.findById(req.params.parkId)
   .then(park => {
@@ -69,7 +72,6 @@ function edit(req, res){
     res.redirect('/parks')
   })
 }
-
 
 function deletePost(req, res){
   Park.findById(req.params.parkId)
