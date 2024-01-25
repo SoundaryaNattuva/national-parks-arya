@@ -360,12 +360,7 @@
 }
 
 #comment-container{
-  /* border: 2px solid pink; */
   width: 800px;
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* display: inline-block; */
 }
 
 #top-comments{

@@ -151,18 +151,15 @@
 }
 
 #route{
-  /* border: 2px solid #422800; */
   width: 50%
 }
 
 #date{
-  /* border: 2px solid #422800; */
   width: 50%;
   text-align: end;
 }
 
 .inner-container{
-  border: 2px solid yellow;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -172,7 +169,6 @@
 }
 
 .left-column{
-  /* border: 2px solid #422800; */
   width:25%;
   height: 457px;
   padding: 0px 15px;
@@ -258,17 +254,15 @@
 }
 
 .right-column{
-  border: 2px solid #422800;
   width: 75%;
   height: 450px;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  /* display: flex; */
+  display: inline-block;
 }
 
 #photo-box{
-  border: 2px solid #afd4cc;
   width: 100%;
   height: 100px;
   align-items: center;
@@ -291,7 +285,7 @@
 }
 
 #content{
-  border: 2px solid #422800;
+  /* border: 2px solid #422800; */
   width: 100%;
   height: 60%;
   align-items: center;
@@ -303,7 +297,6 @@
 }
 
 .bottombtns{
-  /* border: 2px solid #422800; */
   width: 300px;
   flex-direction: row;
   align-items: center;
@@ -336,12 +329,7 @@
 }
 
 #comment-container{
-  /* border: 2px solid pink; */
   width: 800px;
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* display: inline-block; */
 }
 
 #top-comments{
@@ -353,7 +341,6 @@
 }
 
 #bottom-create-comments{
-  /* border: 2px solid #422800; */
   width: 80%;
   height: 200px;
   align-items: center;
@@ -430,6 +417,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  column-span: 30;
 }
 
 #input-box{
@@ -459,7 +447,7 @@
   padding: 0px 10px;
 }
 
-#content input{
+#content-box{
   height:200px;
   width: 500px;
   margin: 10px 0px 0px 0px;
@@ -468,6 +456,11 @@
   border-radius: 20px;
   display: flex;
   resize: vertical;
+  padding: 10px 10px;
+}
+
+#content{
+  padding-left: 40px;
 }
 
 #updateBtn{

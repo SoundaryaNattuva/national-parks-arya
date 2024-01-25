@@ -1,4 +1,5 @@
 import { Park } from '../models/park.js'
+import { Profile } from '../models/profile.js'
 
 function newParkPost(req, res) {
   res.render('parks/new', {
@@ -10,8 +11,13 @@ function newParkPost(req, res) {
 function createPost (req,res){
 req.body.owner = req.user.profile._id
 Park.create(req.body)
-  .then(parks => {
+  .then(park => {
     res.redirect('/parks')
+    .then((profile) => {
+      console.log(park._id)
+      console.log(req.user.profile)
+      req.user.profile.parksVisited.push(park._id)
+    })
   })
   .catch(err => {
     console.log(err)
