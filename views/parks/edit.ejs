@@ -6,9 +6,22 @@
   <img id="update-header" src="https://i.imgur.com/tvaBNHL.png">
 </h1>
 
+
+
 <form 
   action="/parks/<%= park._id %>?_method=PUT"
   method="POST">
+  <div id="header-container">
+    <label id="park-name">Park:
+      <select name="parkName" id="nameDropDown">
+        <option>Mount Rainier</option>
+        <option>Rocky Mountain</option>
+        <option>Sequoia</option>
+        <option>Acadia</option>
+        <option>Zion</option>
+      </select>
+    </label>
+  </div>
   <div class="container">
     <div class="route-date">
       <div id="route">
