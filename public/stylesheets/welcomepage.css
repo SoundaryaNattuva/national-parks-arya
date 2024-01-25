@@ -3,8 +3,66 @@ body{
   align-content: center;
 }
 
-.blogbtn {
+
+.container{
+  height: 550px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  align-content: center;
+}
+
+.welcomeMessage{
+  width: 400px;
+  text-align: center;
+}
+
+.welcomeMessage h2{
+  color:#9E2A2B;
+}
+
+.statusIcons{
+  width: 400px;
+  text-align: center;
+}
+
+.quesPrompt{
+  width: 400px;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.logPrompt{
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 80px;
+  margin: auto;
+}
+
+#prompt{
   background-color: #fbeee0;
+  border: 3px solid #422800;
+  border-radius: 10px;
+  color: #422800;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.blogbtn {
+  background-color: #da696b;
   border: 2px solid #422800;
   border-radius: 30px;
   box-shadow: #422800 4px 4px 0 0;
@@ -20,71 +78,6 @@ body{
   font-family: 'Quicksand', sans-serif;
   font-family: 'Silkscreen', sans-serif;
   font-family: 'Yanone Kaffeesatz', sans-serif;
-}
-
-.container{
-  border: solid 1px white;
-  height: 550px;
-  width: 450px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  align-content: center;
-}
-
-.welcomeMessage{
-  /* border: solid 1px red; */
-  width: 400px;
-  text-align: center;
-}
-
-.welcomeMessage h2{
-  color:#9E2A2B;
-}
-
-.statusIcons{
-  /* border: solid 1px green; */
-  width: 400px;
-  text-align: center;
-}
-
-.quesPrompt{
-  /* border: solid 1px blue; */
-  width: 400px;
-  display: inline-block;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  align-content: center;
-}
-
-.logPrompt{
-  border: solid 1px yellow;
-  width: 400px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  height: 80px;
-  margin: auto;
-}
-
-#prompt{
-  /* border: solid 1px purple; */
-  background-color: #fbeee0;
-  border: 3px solid #422800;
-  border-radius: 10px;
-  color: #422800;
-  width: 400px;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  /* background-color:rgba(158, 42, 43, 0.75); */
-  /* box-shadow: 15px 15px rgba(233, 196, 106, 0.5);  */
 }
 
 .blogbtn:hover{

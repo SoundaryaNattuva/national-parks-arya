@@ -60,34 +60,4 @@ Delete this `README.md` file and finally, make an initial commit:
 git add .
 git commit -m "initial commit"
 git push origin main
-```
-
-You're done!
-
-
-function updatePost(req, res){
-  Park.findById(req.params.parkId)
-  console.log(Park)
-  .then(park => {
-    if (park.owner.equals(req.user.profile._id)) {
-      park.updateOne(req.body)
-      console.log("before save 🔥")
-      park.save()
-      .then(()=> {
-        res.redirect(`/parks/${park._id}`)
-      })
-      .catch(err => {
-        console.log(err)
-        res.redirect("/parks")
-      })
-    } else {
-      throw new Error('🔥🚫 Not authorized 🚫')
-    }
-  })
-  .catch(err => {
-    console.log("before redirecting 🔥")
-    console.log(err)
-    res.redirect("/parks")
-  })
-  console.log(Park)
-}
+``````

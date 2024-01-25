@@ -1,5 +1,6 @@
 <%- include('../partials/html-head') %>
 <link rel="stylesheet" href="/stylesheets/new.css"/>
+<script defer src="/js/dropdown.js"></script>
 <%- include('../partials/nav') %>
 
 <div id="createNewContainer">
@@ -44,7 +45,7 @@
           <textarea cols="60" id="contentBox" type="text" name="postContent"></textarea>
         </label>
       <div>
-        <br><button class="createPost"> Create Post </button>
+        <br><button id="createPost" class="createPost"> Create Post </button>
       </div>
 
     </form>
