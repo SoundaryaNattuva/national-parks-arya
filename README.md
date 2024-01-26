@@ -22,6 +22,10 @@ Dive into the Treky app, where every trail tells a story, and every badge is a t
 - [ ] Create an admin user that can populate National Parks and its associated routes. The parks and routes will populate in the dropdown for each new entry.  
 - [ ] Add a stats page which will show parks visited, most visited park, and total elevation climbed. 
 
+## Project Planning Materials
+- [Trello](https://trello.com/b/Tesi9uDr/national-parks-tracker)
+- [Whimsical](https://whimsical.com/erd-np-Jns9xSA6CzF3cLprd1BinT)
+
 
 ## Resources used 👩🏽‍💻
 - [Mozilla Developer](https://developer.mozilla.org/en-US/)
