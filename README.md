@@ -17,10 +17,10 @@ Dive into the Treky app, where every trail tells a story, and every badge is a t
 
 
 ## Icebox items 🧊
-- [ ] Create the ability to send friend requests. This will allow for only you and your friends adventures to populate on "all adventures".
+- [ ] Create the ability to send friend requests. This will allow for only you and your friend's adventures to populate under "all adventures".
 - [ ] Render unique National Park badges when a user adds a park to their profile.
-- [ ] Create an admin user that can populate National Parks and its associated routes. The parks and routes will populate in the dropdown for each new entry.  
-- [ ] Add a stats page which will show parks visited, most visited park, and total elevation climbed. 
+- [ ] Create an admin user that can populate National Parks and their associated routes. The parks and routes will populate in the dropdown for each new entry.  
+- [ ] Add a stats page that will show parks visited, most visited park, and total elevation climbed. 
 
 ## Project Planning Materials
 - [Trello](https://trello.com/b/Tesi9uDr/national-parks-tracker)
