@@ -60,8 +60,10 @@ function show(req, res){
 function edit(req, res){
   Park.findById(req.params.parkId)
   .then(park => {
+    const parkDate = park.date.toISOString().slice(0,16)
       res.render('parks/edit',{
-      park
+      park,
+      parkDate: parkDate
     })
   })
   .catch(err => {
