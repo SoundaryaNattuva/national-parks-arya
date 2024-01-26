@@ -31,11 +31,11 @@ Dive into the Treky app, where every trail tells a story, and every badge is a t
 - [Mozilla Developer](https://developer.mozilla.org/en-US/)
 - [Coolors](https://coolors.co/palettes/trending)
 - [Canva - Logo, Images and Favicon](https://www.canva.com/)
+- [Imgur](https://imgur.com/a/HlvPBcZ)
 
 ## Attributions 🛟
 - [Google Fonts](https://fonts.google.com/)
 - [Font Awesome](https://fontawesome.com/)
-- [Imgur](https://imgur.com/a/HlvPBcZ)
 - [Button Styling](https://getcssscan.com/css-buttons-examples)
 
 ## Technologies used ⚙️
@@ -48,3 +48,4 @@ Dive into the Treky app, where every trail tells a story, and every badge is a t
 ![Express.JS](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Mongoose](https://img.shields.io/badge/Mongoose-880000.svg?style=for-the-badge&logo=Mongoose&logoColor=white)
+![Trello](https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white)
