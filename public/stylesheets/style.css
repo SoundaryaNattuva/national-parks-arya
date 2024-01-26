@@ -15,7 +15,6 @@ body {
   background-image: url('../images/background.jpg');
   background-position: center;
   background-repeat: no-repeat;
-  /* Use a system font, if none are available use any found sans-sarif font */
   font-family: 'Poiret One', sans-serif;
   font-family: 'Quicksand', sans-serif;
   font-family: 'Silkscreen', sans-serif;

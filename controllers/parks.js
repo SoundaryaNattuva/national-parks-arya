@@ -27,7 +27,6 @@ Park.create(req.body)
 }
 
 function indexPage(req,res){
-  console.log("👔")
   Park.find({})
   .then (parks => {
     res.render('parks/index', {
@@ -205,7 +204,6 @@ function showBadges(req, res){
   .then(profile => {
     Park.find({})
     .then(parks => {
-      console.log(profile)
       res.render('parks/badges', {
         profile,
         allParks: parks
