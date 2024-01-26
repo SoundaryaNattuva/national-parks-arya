@@ -69,7 +69,15 @@
         </div>
         <div id="content">
           <label>Post:
-            <textarea id="content-box" type="text" name="postContent" cols="30" value="<%= park.postContent %>"></textarea>
+            <textarea 
+            id="content-box" 
+            type="text" 
+            name="postContent" 
+            cols="30"
+            autocomplete="off"
+            maxlength="550"
+            ><%= park.postContent %>
+          </textarea>
           </label>
         </div>
       </div>

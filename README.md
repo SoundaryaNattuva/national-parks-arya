@@ -1,10 +1,11 @@
 # Treky - National Parks Tracker 🏔️🐻
 
+![Image](https://i.imgur.com/NA2iWtQ.png)
+
 Embark on a journey of discovery with Treky, your ultimate companion for cataloging every national park adventure. From the sun-dappled valleys of Yosemite to the rugged peaks of Mount Rainier, Treky turns every hike into a quest for exploration, allowing you to collect badges, share memorable trails, and document the wilderness through your eyes. 
 
 Dive into the Treky app, where every trail tells a story, and every badge is a trophy of your adventures across America's vast natural wonders.
 
-![Image](https://i.imgur.com/NA2iWtQ.png)
 
 <br>
 
@@ -26,6 +27,8 @@ Dive into the Treky app, where every trail tells a story, and every badge is a t
 ## Attributions 🛟
 - [Google Fonts](https://fonts.google.com/)
 - [Font Awesome](https://fontawesome.com/)
+- [Imgur](https://imgur.com/a/HlvPBcZ)
+- [Button Styling](https://getcssscan.com/css-buttons-examples)
 
 ## Technologies used ⚙️
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -33,7 +36,7 @@ Dive into the Treky app, where every trail tells a story, and every badge is a t
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
-![NodeJS]https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColorj=white
-![Express.JS]https://img.shields.io/badge/Express.js-404D59?style=for-the-badge
-![MongoDB]https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white
-![Mongoose]https://img.shields.io/badge/Mongoose-880000.svg?style=for-the-badge&logo=Mongoose&logoColor=white
+![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColorj=white)
+![Express.JS](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![Mongoose](https://img.shields.io/badge/Mongoose-880000.svg?style=for-the-badge&logo=Mongoose&logoColor=white)
