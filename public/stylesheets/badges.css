@@ -13,7 +13,7 @@
 table {
   border: solid 3px #422800;
   width: 800px;
-  height: 800px;
+  height: 400px;
   background-color: #422800;
 }
 
@@ -31,4 +31,12 @@ td{
 
 td:hover{
   background-color: #732424;
+}
+
+#badgeTable{
+  width: 600px;
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap; 
+  margin-bottom: 40px;
 }

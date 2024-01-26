@@ -13,8 +13,6 @@ Park.create(req.body)
   .then(park => {
     Profile.findById(req.user.profile._id)
       .then(profile => {
-        console.log("This is the park id: ", park._id)
-        console.log("This is the currently logged in user: ", req.user.profile)
         profile.parksVisited.push(park._id)
         profile.save()
         .then(() => {
@@ -200,9 +198,20 @@ function deleteComment(req, res){
 
 
 function showBadges(req, res){
-  res.render('parks/badges')
-}
+  Profile.findById(req.user.profile._id)
+  .populate('parksVisited')
+  .then(profile => {
+    Park.find({})
+    .then(parks => {
+      console.log(profile)
+      res.render('parks/badges', {
+        profile,
+        allParks: parks
+      })
+    })
 
+  })
+}
 
 export {
   newParkPost as new,
