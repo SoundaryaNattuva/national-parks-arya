@@ -1,6 +1,6 @@
 # Treky - National Parks Tracker 🏔️🐻
 
-![Image](https://i.imgur.com/QEC3ic6.png){margin: 0 auto}
+![Image](https://i.imgur.com/QEC3ic6.png)
 
 Embark on a journey of discovery with Treky, your ultimate companion for cataloging every national park adventure. From the sun-dappled valleys of Yosemite to the rugged peaks of Mount Rainier, Treky turns every hike into a quest for exploration, allowing you to collect badges, share memorable trails, and document the wilderness through your eyes. 
 
