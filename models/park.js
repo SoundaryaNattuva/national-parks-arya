@@ -25,15 +25,6 @@ const parkSchema = new Schema({
   timestamps: true
 })
 
-const tacoSchema = new Schema({
-  name: String,
-  tasty: Boolean,
-  owner: { type: Schema.Types.ObjectId, ref: "Profile" },
-  comments: [commentSchema]
-}, {
-  timestamps: true
-})
-
 const Park = mongoose.model('Park', parkSchema)
 
 export {

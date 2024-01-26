@@ -54,7 +54,7 @@ body{
   border-radius: 10px;
   color: #422800;
   width: 400px;
-  height: 300px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,4 +83,8 @@ body{
 .blogbtn:hover{
   background-color: #4d8964;
   color:#fbeee0;
+}
+
+#welcomeImg{
+  height: 200px;
 }
