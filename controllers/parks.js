@@ -28,6 +28,9 @@ Park.create(req.body)
 
 function indexPage(req,res){
   Park.find({})
+  .populate([
+    {path: "owner"},
+    {path: "comments.author"}])
   .then (parks => {
     res.render('parks/index', {
       parks,
