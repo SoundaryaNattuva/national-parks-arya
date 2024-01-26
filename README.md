@@ -4,13 +4,7 @@ Embark on a journey of discovery with Treky, your ultimate companion for catalog
 
 Dive into the Treky app, where every trail tells a story, and every badge is a trophy of your adventures across America's vast natural wonders.
 
-![Image](/css/gamescreen.png)
-
-## The game-play is as follows 👾
-
-1. You have 6 tries to guess a 5-letter word that is space-related. 
-2. For every guess, the color of the tile is revealed telling you whether the letter is in the right spot (green), wrong sport (yellow) or not part of the word at all (gray).
-3. If you want to dive into another word sometime through the game, or when you are finished, you can click the rocket icon 🚀 on the top right to launch a new game. 
+![Image](https://i.imgur.com/NA2iWtQ.png)
 
 <br>
 
@@ -18,7 +12,7 @@ Dive into the Treky app, where every trail tells a story, and every badge is a t
 
 
 ## Icebox items 🧊
-- [ ] create the ability to send friend requests. This will allow for only you and your friends adventures to populate on "all adventures".
+- [ ] Create the ability to send friend requests. This will allow for only you and your friends adventures to populate on "all adventures".
 - [ ] Render unique National Park badges when a user adds a park to their profile.
 - [ ] Create an admin user that can populate National Parks and its associated routes. The parks and routes will populate in the dropdown for each new entry.  
 - [ ] Add a stats page which will show parks visited, most visited park, and total elevation climbed. 
@@ -39,3 +33,7 @@ Dive into the Treky app, where every trail tells a story, and every badge is a t
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+![NodeJS]https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColorj=white
+![Express.JS]https://img.shields.io/badge/Express.js-404D59?style=for-the-badge
+![MongoDB]https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white
+![Mongoose]https://img.shields.io/badge/Mongoose-880000.svg?style=for-the-badge&logo=Mongoose&logoColor=white
