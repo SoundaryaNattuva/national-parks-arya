@@ -209,7 +209,6 @@ function showBadges(req, res){
         allParks: parks
       })
     })
-
   })
 }
 
