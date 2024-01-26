@@ -224,6 +224,11 @@
 
 #date{
   width: 50%;
+  text-align: center;
+}
+
+#authorName{
+  width: 50%;
   text-align: end;
 }
 
